@@ -28,16 +28,32 @@ const NextMeetings = (props) => {
 
   return (
     <div>
-      {meetings.map(meeting => 
-        <div
-          style={{textAlign:"left"}}
-          key={meeting.startTime}
-        >
-          <p>{meeting.startTime.substring(11,16)} - {meeting.endTime.substring(11,16)}</p>
-          <p><b>{meeting.subject}</b></p>
-          <p>{meeting.organizer.toUpperCase()}</p>
+      <div>
+        <div style={{
+          display:"flex",
+          flexDirection:"row",
+          flexWrap:"wrap"
+        }}>
+          {meetings.map(meeting => 
+            <div
+              style={{
+                textAlign:"left", 
+                flexBasis:180,
+                flexGrow:1,
+                backgroundColor:"gray",
+                padding:10,
+                border:"2px solid"
+              }}
+              
+              key={meeting.startTime}
+            >
+              <p>{meeting.startTime.substring(11,16)} - {meeting.endTime.substring(11,16)}</p>
+              <p><b>{meeting.subject}</b></p>
+              <p>{meeting.organizer.toUpperCase()}</p>
+            </div>
+          )}
         </div>
-      )}
+      </div>
     </div>
   )
 }

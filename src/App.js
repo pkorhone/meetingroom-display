@@ -2,12 +2,27 @@ import React from 'react'
 import './App.css'
 import CurrentMeeting from './components/CurrentMeeting'
 import NextMeetings from './components/NextMeetings'
+import DetailsPane from './components/DetailsPane'
 
 function App() {
   return (
-    <div>
-      <CurrentMeeting />
-      <NextMeetings />
+    <div className="container">
+
+      <div style={{
+        flexGrow: 1,
+        backgroundColor:"cyan"
+      }}>
+        <DetailsPane />
+      </div>
+
+      <div style={{
+        flexGrow: 3,
+        backgroundColor:"green"
+      }}>
+        <CurrentMeeting />
+        <NextMeetings />
+      </div>
+
     </div>
   )
 }
