@@ -1,28 +1,13 @@
 import React from 'react'
 import './App.css'
-import CurrentMeeting from './components/CurrentMeeting'
-import NextMeetings from './components/NextMeetings'
 import DetailsPane from './components/DetailsPane'
+import MainPane from './components/MainPane'
 
 function App() {
   return (
     <div className="container">
-
-      <div style={{
-        flexGrow: 1,
-        backgroundColor:"cyan"
-      }}>
-        <DetailsPane />
-      </div>
-
-      <div style={{
-        flexGrow: 3,
-        backgroundColor:"green"
-      }}>
-        <CurrentMeeting />
-        <NextMeetings />
-      </div>
-
+      <DetailsPane />
+      <MainPane />
     </div>
   )
 }

@@ -1,0 +1,9 @@
+.mainPane {
+  flex-grow: 3;
+
+  background-image: url('../img/bg-image.jpg');
+  background-position: bottom;
+  background-size: cover;
+
+  color: #F9F9FB
+}
