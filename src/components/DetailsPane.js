@@ -1,5 +1,6 @@
 import React from 'react'
 import './DetailsPane.css'
+import CalendarView from './CalendarView'
 
 const DetailsPane = (props) => {
   return (
@@ -7,6 +8,7 @@ const DetailsPane = (props) => {
       <h2>TODAY'S CALENDAR</h2>
       <h3>Or</h3>
       <h2>EVENT DETAILS</h2>
+      <CalendarView />
     </div>
   )
 }
