@@ -40,7 +40,6 @@ const NextMeetings = (props) => {
                 textAlign:"left", 
                 flexBasis:180,
                 flexGrow:1,
-                backgroundColor:"gray",
                 padding:10,
                 border:"2px solid"
               }}

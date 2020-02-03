@@ -10,14 +10,12 @@ function App() {
 
       <div style={{
         flexGrow: 1,
-        backgroundColor:"cyan"
       }}>
         <DetailsPane />
       </div>
 
       <div style={{
         flexGrow: 3,
-        backgroundColor:"green"
       }}>
         <CurrentMeeting />
         <NextMeetings />
