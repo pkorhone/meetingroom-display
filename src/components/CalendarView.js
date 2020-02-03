@@ -34,6 +34,7 @@ const CalendarView = (props) => {
       <Calendar
         localizer={localizer}
         events={events}
+        toolbar={false}
         defaultView='day'
       />
     </div>
