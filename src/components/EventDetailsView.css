@@ -1,0 +1,14 @@
+.eventTitleBar {
+  background-color: #fc0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.eventTitle {
+  flex: 5 3 85%;
+}
+
+.backButton {
+  flex: 1 0 15%;
+  border: 2px solid;
+}

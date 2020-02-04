@@ -1,18 +1,25 @@
 import React, { useState } from 'react'
 import './DetailsPane.css'
 import CalendarView from './CalendarView'
+import EventDetailsView from './EventDetailsView'
 
 const DetailsPane = (props) => {
 
   const [selectedEvent, setSelectedEvent] = useState(null)
 
+  const weekdays = [
+    'Sunday', 
+    'Monday', 
+    'Tuesday', 
+    'Wednesday', 
+    'Thursday',
+    'Friday',
+    'Saturday'
+  ]
+
   const onSelectEvent = (event) => {
     console.log(event)
     setSelectedEvent(event)
-  }
-
-  const printSelected = () => {
-    console.log(selectedEvent)
   }
 
   const onReturnToCalendar = () => {
@@ -21,12 +28,10 @@ const DetailsPane = (props) => {
 
   return (
     <div className='detailsPane'>
-      <h2>TODAY'S CALENDAR</h2>
-      <h3>Or</h3>
-      <h2>EVENT DETAILS</h2>
-      <button onClick={() => onReturnToCalendar()}>back to calendar</button>
-      <button onClick={() => printSelected()}>print selected event</button>
-      <CalendarView onSelectEvent={onSelectEvent} />
+      {selectedEvent === null ? 
+        <CalendarView onSelectEvent={onSelectEvent} /> :
+        <EventDetailsView event={selectedEvent} onReturnToCalendar={onReturnToCalendar} />
+      }
     </div>
   )
 }
