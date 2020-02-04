@@ -11,18 +11,18 @@ const CalendarView = (props) => {
   const events = [
     {
       title: 'Test Event 1',
-      start: new Date('2020-02-03T08:30:00'),
-      end: new Date('2020-02-03T10:30:00')
+      start: new Date('2020-02-04T08:30:00'),
+      end: new Date('2020-02-04T10:30:00')
     },
     {
       title: 'Test Event 2',
-      start: new Date('2020-02-03T13:00:00'),
-      end: new Date('2020-02-03T14:00:00')
+      start: new Date('2020-02-04T13:00:00'),
+      end: new Date('2020-02-04T14:00:00')
     },
     {
       title: 'Test Event 3',
-      start: new Date('2020-02-03T16:00:00'),
-      end: new Date('2020-02-03T18:00:00')
+      start: new Date('2020-02-04T16:00:00'),
+      end: new Date('2020-02-04T18:00:00')
     }
   ]
 
@@ -36,6 +36,7 @@ const CalendarView = (props) => {
         events={events}
         toolbar={false}
         defaultView='day'
+        onSelectEvent={(e) => props.onSelectEvent(e)}
       />
     </div>
   )
