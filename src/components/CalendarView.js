@@ -22,6 +22,11 @@ const CalendarView = (props) => {
       title: 'Test Event 3',
       start: new Date('2020-02-04T16:00:00'),
       end: new Date('2020-02-04T18:00:00')
+    },
+    {
+      title: 'Overnight Event',
+      start: new Date('2020-02-04T22:00:00'),
+      end: new Date('2020-02-08T02:00:00')
     }
   ]
 
@@ -36,6 +41,7 @@ const CalendarView = (props) => {
         localizer={localizer}
         events={events}
         toolbar={false}
+        showMultiDayTimes={true}
         defaultView='day'
         onSelectEvent={(e) => props.onSelectEvent(e)}
       />
