@@ -40,7 +40,7 @@ const Detail = (props) => {
         {props.type === 'collapse' ? 
           // show collapse icon for collapsible content
           <div className='detailCollapse' onClick={() => toggleCollapsed()}>
-            {collapsed ? <Icon name='chevron down' size='large'/> : <Icon name='chevron up' size='large'/>}
+            {collapsed ? <Icon name='chevron down' size='big'/> : <Icon name='chevron up' size='big'/>}
           </div> :
           null
         }

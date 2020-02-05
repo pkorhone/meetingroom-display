@@ -8,25 +8,26 @@
 
 .detailIcon {
   flex: 0 0 15%;
-  border-right: 2px solid;
-  justify-content: center;
-  align-content: center;
+  line-height: initial;
 }
 
 .detailIcon img {
-  color: red;
   max-width: 40px;
   margin-left: 20%;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 
 .detailTitle {
   flex: 0 2 70%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .detailCollapse {
   flex: 0 0 15%;
-  border-left: 2px solid;
+  padding-top: 8px;
 }
 
 .contentRow {
