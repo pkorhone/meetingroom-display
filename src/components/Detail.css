@@ -18,8 +18,8 @@
   border-left: 2px solid;
 }
 
-.participant {
-  padding: 5px 0 5px 0;
+.contentRow {
+  padding: 10px 10px 10px 15%;
 }
 
 .participantName {

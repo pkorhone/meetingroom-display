@@ -24,14 +24,25 @@
     "Organizer": "Joose Rautemaa",
     "StartTime": "2020-02-05T09:30:00",
     "EndTime": "2020-02-05T10:30:00",
-    "Participants": null
+    "Participants": null,
+    "Description": "This is a test event for the meeting room calendar display."
   },
   {
     "Subject": "Joose goes sickbr0",
     "Organizer": "Joose Rautemaa",
     "StartTime": "2020-02-05T10:30:00",
     "EndTime": "2020-02-05T11:30:00",
-    "Participants": null
+    "Participants": [
+      {
+        "Name": "Petteri Lehtonen",
+        "Title": "UX Architect"
+      },
+      {
+        "Name": "Tero Tapanainen",
+        "Title": "CTO"
+      }
+    ],
+    "Description": "This is a test event that has some participants and a description."
   },
   {
     "Subject": "Nousiainen Inspection",

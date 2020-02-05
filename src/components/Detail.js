@@ -22,15 +22,15 @@ const Detail = (props) => {
         //collapse content
           <div>
             {props.content.map(participant => 
-              <div key={participant.Name + participant.Title} className='participant'>
+              <div key={participant.Name + participant.Title} className='contentRow'>
                 <h5 className='participantName'>{participant.Name.toUpperCase()}</h5>
                 <h5 className='participantTitle'>{participant.Title.toUpperCase()}</h5>
               </div>
             )}
           </div> :
           // show content
-          <div>
-            <p>normal content</p>
+          <div className='contentRow'>
+            <p>{props.content}</p>
           </div>
         :
         // no content
