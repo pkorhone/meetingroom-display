@@ -7,16 +7,6 @@ const DetailsPane = (props) => {
 
   const [selectedEvent, setSelectedEvent] = useState(null)
 
-  const weekdays = [
-    'Sunday', 
-    'Monday', 
-    'Tuesday', 
-    'Wednesday', 
-    'Thursday',
-    'Friday',
-    'Saturday'
-  ]
-
   const onSelectEvent = (event) => {
     console.log(event)
     setSelectedEvent(event)

@@ -10,24 +10,24 @@ const CalendarView = (props) => {
   const events = [
     {
       title: 'Test Event 1',
-      start: new Date('2020-02-04T08:30:00'),
-      end: new Date('2020-02-04T10:30:00')
+      start: new Date('2020-02-05T08:30:00'),
+      end: new Date('2020-02-05T10:30:00')
     },
     {
       title: 'Test Event 2',
-      start: new Date('2020-02-04T13:00:00'),
-      end: new Date('2020-02-04T14:00:00')
+      start: new Date('2020-02-05T13:00:00'),
+      end: new Date('2020-02-05T14:00:00')
     },
     {
       title: 'Test Event 3',
-      start: new Date('2020-02-04T16:00:00'),
-      end: new Date('2020-02-04T18:00:00')
+      start: new Date('2020-02-05T16:00:00'),
+      end: new Date('2020-02-05T18:00:00')
     },
     {
-      title: 'Overnight Event',
-      start: new Date('2020-02-04T22:00:00'),
-      end: new Date('2020-02-08T02:00:00')
-    }
+      title: 'Overnight event',
+      start: new Date('2020-02-05T20:00:00'),
+      end: new Date('2020-02-06T11:00:00')
+    },
   ]
 
   moment.locale('fi')
