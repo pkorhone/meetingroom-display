@@ -3,7 +3,7 @@ import './DetailsPane.css'
 import CalendarView from './CalendarView'
 import EventDetailsView from './EventDetailsView'
 
-const DetailsPane = (props) => {
+const DetailsPane = ({ meetings }) => {
 
   const [selectedEvent, setSelectedEvent] = useState(null)
 
@@ -19,7 +19,7 @@ const DetailsPane = (props) => {
   return (
     <div className='detailsPane'>
       {selectedEvent === null ? 
-        <CalendarView onSelectEvent={onSelectEvent} /> :
+        <CalendarView onSelectEvent={onSelectEvent} meetings={meetings} /> :
         <EventDetailsView event={selectedEvent} onReturnToCalendar={onReturnToCalendar} />
       }
     </div>
