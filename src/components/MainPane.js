@@ -3,11 +3,11 @@ import CurrentMeeting from './CurrentMeeting'
 import NextMeetings from './NextMeetings'
 import './MainPane.css'
 
-const MainPane = (props) => {
+const MainPane = ({ meetings }) => {
   return (
     <div className='mainPane'>
-      <CurrentMeeting />
-      <NextMeetings />
+      <CurrentMeeting meetings={meetings}/>
+      <NextMeetings meetings={meetings}/>
     </div>
   )
 }

@@ -1,0 +1,43 @@
+[
+  {
+    "Subject": "eCraft Management Monthly Meeting",
+    "Organizer": "Ville Hemmil�",
+    "StartTime": "2020-02-05T07:30:00",
+    "EndTime": "2020-02-05T08:30:00",
+    "Participants": [
+      {
+        "Name": "Juho R�yhy",
+        "Title": "Art Director"
+      },
+      {
+        "Name": "Petteri Lehtonen",
+        "Title": "UX Architect"
+      },
+      {
+        "Name": "Tero Tapanainen",
+        "Title": "CTO"
+      }
+    ]
+  },
+  {
+    "Subject": "Jooses Design workshop",
+    "Organizer": "Joose Rautemaa",
+    "StartTime": "2020-02-05T09:30:00",
+    "EndTime": "2020-02-05T10:30:00",
+    "Participants": null
+  },
+  {
+    "Subject": "Joose goes sickbr0",
+    "Organizer": "Joose Rautemaa",
+    "StartTime": "2020-02-05T10:30:00",
+    "EndTime": "2020-02-05T11:30:00",
+    "Participants": null
+  },
+  {
+    "Subject": "Nousiainen Inspection",
+    "Organizer": "Joose Rautemaa",
+    "StartTime": "2020-02-05T11:30:00",
+    "EndTime": "2020-02-05T13:30:00",
+    "Participants": null
+  }
+]
