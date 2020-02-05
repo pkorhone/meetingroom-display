@@ -17,6 +17,20 @@ const Detail = (props) => {
         </div>
       </div>
 
+      {props.type ?
+        props.type === 'collapse' ?
+        //collapse content
+          <div>
+            {props.content.map(participant => <div key={participant}>{participant.Name}</div>)}
+          </div> :
+          // show content
+          <div>
+            <p>normal content</p>
+          </div>
+        :
+        // no content
+        null
+      }
 
     </div>
   )
