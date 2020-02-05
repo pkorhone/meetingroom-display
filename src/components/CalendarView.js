@@ -5,15 +5,7 @@ import 'moment/locale/fi'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
 import './CalendarView.css'
 
-const CalendarView = ({ onSelectEvent, meetings }) => {
-
-  const calendarEvents = meetings.map(meeting => {
-    return {
-      title: meeting.Subject,
-      start: new Date(meeting.StartTime),
-      end: new Date(meeting.EndTime)
-    }
-  })
+const CalendarView = ({ onSelectMeeting, meetings }) => {
 
   moment.locale('fi')
   const localizer = momentLocalizer(moment)
@@ -24,11 +16,14 @@ const CalendarView = ({ onSelectEvent, meetings }) => {
       <h1>DATE</h1>
       <Calendar
         localizer={localizer}
-        events={calendarEvents}
+        events={meetings}
+        titleAccessor={'Subject'}
+        startAccessor={(meeting) => new Date(meeting.StartTime)}
+        endAccessor={(meeting) => new Date(meeting.EndTime)}
         toolbar={false}
         showMultiDayTimes={true}
         defaultView='day'
-        onSelectEvent={(e) => onSelectEvent(e)}
+        onSelectEvent={(meeting) => onSelectMeeting(meeting)}
       />
     </div>
   )

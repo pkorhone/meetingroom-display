@@ -5,22 +5,22 @@ import EventDetailsView from './EventDetailsView'
 
 const DetailsPane = ({ meetings }) => {
 
-  const [selectedEvent, setSelectedEvent] = useState(null)
+  const [selectedMeeting, setSelectedMeeting] = useState(null)
 
-  const onSelectEvent = (event) => {
-    console.log(event)
-    setSelectedEvent(event)
+  const onSelectMeeting = (meeting) => {
+    console.log(meeting)
+    setSelectedMeeting(meeting)
   }
 
   const onReturnToCalendar = () => {
-    setSelectedEvent(null)
+    setSelectedMeeting(null)
   }
 
   return (
     <div className='detailsPane'>
-      {selectedEvent === null ? 
-        <CalendarView onSelectEvent={onSelectEvent} meetings={meetings} /> :
-        <EventDetailsView event={selectedEvent} onReturnToCalendar={onReturnToCalendar} />
+      {selectedMeeting === null ? 
+        <CalendarView onSelectMeeting={onSelectMeeting} meetings={meetings} /> :
+        <EventDetailsView meeting={selectedMeeting} onReturnToCalendar={onReturnToCalendar} />
       }
     </div>
   )
