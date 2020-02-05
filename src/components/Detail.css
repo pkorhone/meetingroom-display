@@ -2,12 +2,23 @@
   border-bottom: 1px solid #E4E7EB;
   display: flex;
   flex-wrap: nowrap;
+  padding: 24px 0 24px 0;
+  font-weight: 700;
 }
 
 .detailIcon {
   flex: 0 0 15%;
   border-right: 2px solid;
+  justify-content: center;
+  align-content: center;
 }
+
+.detailIcon img {
+  color: red;
+  max-width: 40px;
+  margin-left: 20%;
+}
+
 
 .detailTitle {
   flex: 0 2 70%;
@@ -20,6 +31,10 @@
 
 .contentRow {
   padding: 10px 10px 10px 15%;
+}
+
+.description {
+  color: #66788A;
 }
 
 .participantName {
