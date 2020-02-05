@@ -21,7 +21,12 @@ const Detail = (props) => {
         props.type === 'collapse' ?
         //collapse content
           <div>
-            {props.content.map(participant => <div key={participant}>{participant.Name}</div>)}
+            {props.content.map(participant => 
+              <div key={participant.Name + participant.Title} className='participant'>
+                <h5 className='participantName'>{participant.Name.toUpperCase()}</h5>
+                <h5 className='participantTitle'>{participant.Title.toUpperCase()}</h5>
+              </div>
+            )}
           </div> :
           // show content
           <div>

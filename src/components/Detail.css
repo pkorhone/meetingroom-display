@@ -17,3 +17,20 @@
   flex: 0 0 15%;
   border-left: 2px solid;
 }
+
+.participant {
+  padding: 5px 0 5px 0;
+}
+
+.participantName {
+  margin: 0;
+  font-size: medium;
+  font-weight: 700;
+}
+
+.participantTitle {
+  margin: 0;
+  color: #A6B1BB;
+  font-size: smaller;
+  font-weight: 700;
+}

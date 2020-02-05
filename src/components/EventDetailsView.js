@@ -67,8 +67,8 @@ const EventDetailsView = ({ meeting, onReturnToCalendar }) => {
       <Detail title={eventDate()} />
       <Detail title={eventLength()} />
       {/* optional properties Participants & Description only rendered if present */}
-      {meeting.Participants === null ? null : <Detail title='Participants' type='collapse' content={meeting.Participants}/> }
-      {meeting.Description === null ? null : <Detail title='Description' type='show' content={meeting.Description}/> }
+      {!meeting.hasOwnProperty('Participants') || meeting.Participants === null ? null : <Detail title='Participants' type='collapse' content={meeting.Participants}/> }
+      {!meeting.hasOwnProperty('Description') || meeting.Description === null ? null : <Detail title='Description' type='show' content={meeting.Description}/> }
     </div>
   )
 }
