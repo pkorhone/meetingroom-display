@@ -1,6 +1,16 @@
 .main {
   text-align: center;
-  padding-top: 160px; 
-  padding-bottom: 160px;
+  padding: 160px 40px 160px 40px;
+  /*padding-top: 160px; 
+  padding-bottom: 160px;*/
   flex-direction: column;
+}
+
+.hugeTitle {
+  font-weight: 900;
+  font-size: xxx-large;
+}
+
+.subTitle {
+  font-weight: 300;
 }
