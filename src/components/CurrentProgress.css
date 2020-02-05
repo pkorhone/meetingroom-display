@@ -1,0 +1,20 @@
+.progressContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.timeLabel {
+  padding: 0 10px 0 10px;
+}
+
+.progressBar {
+  flex-basis: 40%;
+  padding: 15px 10px 0 10px;
+}
+
+.timeLabel h3 {
+  font-weight: 300;
+}

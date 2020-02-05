@@ -1,7 +1,11 @@
-.main {
+.currentMeeting {
   text-align: center;
   padding: 160px 40px 160px 40px;
   flex-direction: column;
+}
+
+.currentMeeting hr {
+  width: 32px;
 }
 
 .hugeTitle {
