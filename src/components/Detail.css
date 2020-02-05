@@ -1,0 +1,19 @@
+.detailTitleBar {
+  border-bottom: 1px solid #E4E7EB;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.detailIcon {
+  flex: 0 0 15%;
+  border-right: 2px solid;
+}
+
+.detailTitle {
+  flex: 0 2 70%;
+}
+
+.detailCollapse {
+  flex: 0 0 15%;
+  border-left: 2px solid;
+}

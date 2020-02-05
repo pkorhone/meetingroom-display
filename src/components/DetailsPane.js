@@ -1,14 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './DetailsPane.css'
 import CalendarView from './CalendarView'
+import EventDetailsView from './EventDetailsView'
 
 const DetailsPane = (props) => {
+
+  const [selectedEvent, setSelectedEvent] = useState(null)
+
+  const onSelectEvent = (event) => {
+    console.log(event)
+    setSelectedEvent(event)
+  }
+
+  const onReturnToCalendar = () => {
+    setSelectedEvent(null)
+  }
+
   return (
     <div className='detailsPane'>
-      <h2>TODAY'S CALENDAR</h2>
-      <h3>Or</h3>
-      <h2>EVENT DETAILS</h2>
-      <CalendarView />
+      {selectedEvent === null ? 
+        <CalendarView onSelectEvent={onSelectEvent} /> :
+        <EventDetailsView event={selectedEvent} onReturnToCalendar={onReturnToCalendar} />
+      }
     </div>
   )
 }
