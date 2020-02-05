@@ -18,6 +18,7 @@ const EventDetailsView = ({ event, onReturnToCalendar }) => {
   const endDate = `${event.end.getDate()}.${event.end.getMonth()+1}.${event.end.getFullYear()}`
   
   const singleDayEvent = () => {
+    //returns true if event starts and ends on the same date.
     return startDate === endDate
   }
 
