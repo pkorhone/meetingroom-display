@@ -7,7 +7,8 @@ import './MainPane.css'
 const MainPane = ({ meetings }) => {
 
   const [currentMeeting, setCurrentMeeting] = useState(null)
-  const now = moment()._d
+  const [nextMeetings, setNextMeetings] = useState([])
+  const now = new Date(moment()._d)
 
   useEffect(() => {
     meetings.forEach(meeting => {
@@ -15,6 +16,7 @@ const MainPane = ({ meetings }) => {
         setCurrentMeeting(meeting)
       }
     })
+    findNextMeetings()
   }, [])
 
   const eventInProgress = (event) => {
@@ -31,10 +33,29 @@ const MainPane = ({ meetings }) => {
     return false
   }
 
+  const eventStartsLater = (event) => {
+    const startTime = new Date(event.StartTime)
+    if (startTime > now) {
+      // event starts later
+      return true
+    }
+    // event has already started
+    return false
+  }
+
+  const findNextMeetings = () => {
+    // find all meetings in the future and sort by start time
+    const futureMeetings = meetings.filter(meeting => !eventInProgress(meeting) && eventStartsLater(meeting))
+    futureMeetings.sort((a, b) => new Date(a.StartTime) - new Date(b.StartTime))
+    // only show the next 3 upcoming meetings
+    const nextThree = futureMeetings.filter((meeting, index, array) => index < 3)
+    setNextMeetings(nextThree)
+  }
+
   return (
     <div className='mainPane'>
       <CurrentMeeting currentMeeting={currentMeeting}/>
-      <NextMeetings meetings={meetings}/>
+      <NextMeetings nextMeetings={nextMeetings}/>
     </div>
   )
 }
