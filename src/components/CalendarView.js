@@ -28,6 +28,7 @@ const CalendarView = ({ onSelectMeeting, meetings }) => {
           defaultView='day'
           step={15}
           timeslots={2}
+          scrollToTime={new Date(moment().subtract(1.5, 'hour').format())}
           onSelectEvent={(meeting) => onSelectMeeting(meeting)}
           style={{height:'85vh'}}
         />
