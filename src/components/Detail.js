@@ -18,8 +18,13 @@ const Detail = (props) => {
       <div>
         {props.content.map(participant => 
           <div key={participant.Name + participant.Title} className='contentRow'>
-            <h5 className='participantName'>{participant.Name.toUpperCase()}</h5>
-            <h5 className='participantTitle'>{participant.Title.toUpperCase()}</h5>
+            <div>
+              <Icon name='user circle' size='huge' color='grey'/>
+            </div>
+            <div>
+              <h5 className='participantName'>{participant.Name.toUpperCase()}</h5>
+              <h5 className='participantTitle'>{participant.Title.toUpperCase()}</h5>
+            </div>
           </div>
         )}
       </div>
