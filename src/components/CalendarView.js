@@ -10,6 +10,15 @@ const CalendarView = ({ onSelectMeeting, meetings }) => {
   moment.locale('fi')
   const localizer = momentLocalizer(moment)
 
+  const Event = ({ event }) => {
+    return (
+      <div className='eventCard'>
+        <h2>{event.Subject}</h2>
+        <h3>{event.Organizer.toUpperCase()}</h3>
+      </div>
+    )
+  }
+
   return (
     <div className='calendarContainer'>
       <div className='roomTitle' style={{height:'10vh'}}>
@@ -18,6 +27,9 @@ const CalendarView = ({ onSelectMeeting, meetings }) => {
       </div>
       <div>
         <Calendar
+          components={{
+            event: Event
+          }}
           localizer={localizer}
           events={meetings}
           titleAccessor={'Subject'}
@@ -25,6 +37,7 @@ const CalendarView = ({ onSelectMeeting, meetings }) => {
           endAccessor={(meeting) => new Date(meeting.EndTime)}
           toolbar={false}
           showMultiDayTimes={true}
+          views={['day']}
           defaultView='day'
           step={15}
           timeslots={2}

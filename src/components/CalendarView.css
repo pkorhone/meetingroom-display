@@ -18,6 +18,22 @@
   margin: 0;
 }
 
+.eventCard {
+  margin: 15px;
+}
+
+.eventCard h2 {
+  font-weight: 700;
+  font-size: large;
+  margin: 0;
+}
+
+.eventCard h3 {
+  font-weight: 300;
+  font-size: small;
+  margin-top: 5px;
+}
+
 
 /*
 * override react-big-calendar default styles
@@ -121,4 +137,8 @@
 
 .rbc-event.rbc-selected {
   background-color: #ffffff;
+}
+
+.rbc-event-label {
+  display:none;
 }
