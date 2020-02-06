@@ -39,11 +39,11 @@
 }
 
 .rbc-time-gutter {
-  padding-top: 15px; /* due to label offsets above, need top padding to properly show 00:00 */
+  margin-top: 15px; /* due to label offsets above, need top margin to properly show 00:00 */
 }
 
 .rbc-day-slot {
-  padding-top: 15px; /* due to label offsets above, need top padding to properly show 00:00 */
+  margin-top: 15px; /* due to label offsets above, need top margin to properly show 00:00 */
 }
 
 .rbc-label {
