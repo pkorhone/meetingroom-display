@@ -4,6 +4,7 @@
   flex-wrap: nowrap;
   padding: 24px 0 24px 0;
   font-weight: 700;
+  font-size: larger;
 }
 
 .detailIcon {
@@ -27,7 +28,9 @@
 
 .detailCollapse {
   flex: 0 0 15%;
-  padding-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contentRow {

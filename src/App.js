@@ -8,8 +8,8 @@ function App() {
 
   return (
     <div className="container">
-      <DetailsPane meetings={meetings} />
       <MainPane meetings={meetings}/>
+      <DetailsPane meetings={meetings} />
     </div>
   )
 }

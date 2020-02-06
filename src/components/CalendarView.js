@@ -11,20 +11,27 @@ const CalendarView = ({ onSelectMeeting, meetings }) => {
   const localizer = momentLocalizer(moment)
 
   return (
-    <div>
-      <small>CONFERENCE ROOM</small>
-      <h1>DATE</h1>
-      <Calendar
-        localizer={localizer}
-        events={meetings}
-        titleAccessor={'Subject'}
-        startAccessor={(meeting) => new Date(meeting.StartTime)}
-        endAccessor={(meeting) => new Date(meeting.EndTime)}
-        toolbar={false}
-        showMultiDayTimes={true}
-        defaultView='day'
-        onSelectEvent={(meeting) => onSelectMeeting(meeting)}
-      />
+    <div className='calendarContainer'>
+      <div style={{height:'10%'}}>
+        <small>CONFERENCE ROOM</small>
+        <h1>DATE</h1>
+      </div>
+      <div>
+        <Calendar
+          localizer={localizer}
+          events={meetings}
+          titleAccessor={'Subject'}
+          startAccessor={(meeting) => new Date(meeting.StartTime)}
+          endAccessor={(meeting) => new Date(meeting.EndTime)}
+          toolbar={false}
+          showMultiDayTimes={true}
+          defaultView='day'
+          step={15}
+          timeslots={2}
+          onSelectEvent={(meeting) => onSelectMeeting(meeting)}
+          style={{height:'90%'}}
+        />
+      </div>
     </div>
   )
 }

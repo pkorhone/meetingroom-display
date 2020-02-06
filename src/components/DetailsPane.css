@@ -1,4 +1,7 @@
 .detailsPane {
+  /*flex-grow: 4;*/
+  flex-basis: 35%;
   flex-grow: 1;
-  min-width: 25%;
+
+  max-height: 100%
 }

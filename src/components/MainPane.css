@@ -1,5 +1,7 @@
 .mainPane {
-  flex-grow: 3;
+  /*flex-grow: 6;*/
+  flex-basis: 65%;
+  flex-grow: 1;
 
   background-image: url('../img/bg-image.jpg');
   background-position: bottom;

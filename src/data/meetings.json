@@ -2,65 +2,6 @@
   {
     "Subject": "eCraft Management Monthly Meeting",
     "Organizer": "Ville Hemmil�",
-    "StartTime": "2020-02-05T07:30:00",
-    "EndTime": "2020-02-05T08:30:00",
-    "Participants": [
-      {
-        "Name": "Juho R�yhy",
-        "Title": "Art Director"
-      },
-      {
-        "Name": "Petteri Lehtonen",
-        "Title": "UX Architect"
-      },
-      {
-        "Name": "Tero Tapanainen",
-        "Title": "CTO"
-      }
-    ]
-  },
-  {
-    "Subject": "Jooses Design workshop",
-    "Organizer": "Joose Rautemaa",
-    "StartTime": "2020-02-05T09:30:00",
-    "EndTime": "2020-02-05T10:30:00",
-    "Participants": null,
-    "Description": "This is a test event for the meeting room calendar display."
-  },
-  {
-    "Subject": "Joose goes sickbr0",
-    "Organizer": "Joose Rautemaa",
-    "StartTime": "2020-02-05T10:30:00",
-    "EndTime": "2020-02-05T11:30:00",
-    "Participants": [
-      {
-        "Name": "Petteri Lehtonen",
-        "Title": "UX Architect"
-      },
-      {
-        "Name": "Tero Tapanainen",
-        "Title": "CTO"
-      }
-    ],
-    "Description": "This is a test event that has some participants and a description."
-  },
-  {
-    "Subject": "Nousiainen Inspection",
-    "Organizer": "Joose Rautemaa",
-    "StartTime": "2020-02-05T19:15:00",
-    "EndTime": "2020-02-05T21:15:00",
-    "Participants": null
-  },
-  {
-    "Subject": "Future Fourth",
-    "Organizer": "Joose Rautemaa",
-    "StartTime": "2020-02-06T11:30:00",
-    "EndTime": "2020-02-06T13:30:00",
-    "Participants": null
-  },
-  {
-    "Subject": "Future First",
-    "Organizer": "Ville Hemmil�",
     "StartTime": "2020-02-06T07:30:00",
     "EndTime": "2020-02-06T08:30:00",
     "Participants": [
@@ -79,17 +20,76 @@
     ]
   },
   {
-    "Subject": "Future Third",
+    "Subject": "Jooses Design workshop",
+    "Organizer": "Joose Rautemaa",
+    "StartTime": "2020-02-06T09:30:00",
+    "EndTime": "2020-02-06T10:30:00",
+    "Participants": null,
+    "Description": "This is a test event for the meeting room calendar display."
+  },
+  {
+    "Subject": "Joose goes sickbr0",
     "Organizer": "Joose Rautemaa",
     "StartTime": "2020-02-06T10:30:00",
     "EndTime": "2020-02-06T11:30:00",
+    "Participants": [
+      {
+        "Name": "Petteri Lehtonen",
+        "Title": "UX Architect"
+      },
+      {
+        "Name": "Tero Tapanainen",
+        "Title": "CTO"
+      }
+    ],
+    "Description": "This is a test event that has some participants and a description."
+  },
+  {
+    "Subject": "Nousiainen Inspection",
+    "Organizer": "Joose Rautemaa",
+    "StartTime": "2020-02-06T19:15:00",
+    "EndTime": "2020-02-06T21:15:00",
+    "Participants": null
+  },
+  {
+    "Subject": "Future Fourth",
+    "Organizer": "Joose Rautemaa",
+    "StartTime": "2020-02-07T11:30:00",
+    "EndTime": "2020-02-07T13:30:00",
+    "Participants": null
+  },
+  {
+    "Subject": "Future First",
+    "Organizer": "Ville Hemmil�",
+    "StartTime": "2020-02-07T07:30:00",
+    "EndTime": "2020-02-07T08:30:00",
+    "Participants": [
+      {
+        "Name": "Juho R�yhy",
+        "Title": "Art Director"
+      },
+      {
+        "Name": "Petteri Lehtonen",
+        "Title": "UX Architect"
+      },
+      {
+        "Name": "Tero Tapanainen",
+        "Title": "CTO"
+      }
+    ]
+  },
+  {
+    "Subject": "Future Third",
+    "Organizer": "Joose Rautemaa",
+    "StartTime": "2020-02-07T10:30:00",
+    "EndTime": "2020-02-07T11:30:00",
     "Participants": null
   },
   {
     "Subject": "Future Second",
     "Organizer": "Joose Rautemaa",
-    "StartTime": "2020-02-06T09:30:00",
-    "EndTime": "2020-02-06T10:30:00",
+    "StartTime": "2020-02-07T09:30:00",
+    "EndTime": "2020-02-07T10:30:00",
     "Participants": null
   }
 ]

@@ -34,7 +34,7 @@ const Detail = (props) => {
         <div className='detailIcon'>
           <img src={props.icon} alt=''/>
         </div>
-        <div className='detailTitle'>
+        <div className='detailTitle' onClick={() => toggleCollapsed()}>
           <p>{props.title}</p>
         </div>
         {props.type === 'collapse' ? 
