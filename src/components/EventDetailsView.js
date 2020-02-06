@@ -1,10 +1,10 @@
 import React from 'react'
-import './EventDetailsView.css'
-import Detail from './Detail'
 import { Icon } from 'semantic-ui-react'
 import clockIcon from '../icons/time.png'
 import personIcon from '../icons/person.png'
 import descIcon from '../icons/description.png'
+import Detail from './Detail'
+import './EventDetailsView.css'
 
 const EventDetailsView = ({ meeting, onReturnToCalendar }) => {
 

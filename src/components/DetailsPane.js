@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import './DetailsPane.css'
+import React from 'react'
 import CalendarView from './CalendarView'
 import EventDetailsView from './EventDetailsView'
+import './DetailsPane.css'
 
 const DetailsPane = ({ meetings, selectedMeeting, onSelectMeeting, onReturnToCalendar }) => {
 

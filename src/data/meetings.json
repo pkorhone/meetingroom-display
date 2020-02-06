@@ -73,6 +73,23 @@
     "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
+    "Subject": "Overnight Meeting",
+    "Organizer": "Dale Tallon",
+    "StartTime": "2020-02-06T20:00:00",
+    "EndTime": "2020-02-07T05:00:00",
+    "Participants": [
+      {
+        "Name": "Bob Murray",
+        "Title": "QA Lead"
+      },
+      {
+        "Name": "David Poile",
+        "Title": "Designer"
+      }
+    ],
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
     "Subject": "Early Morning Meeting",
     "Organizer": "Kyle Dubas",
     "StartTime": "2020-02-07T06:00:00",
@@ -98,7 +115,7 @@
     "Subject": "Design workshop",
     "Organizer": "Don Waddell",
     "StartTime": "2020-02-07T12:00:00",
-    "EndTime": "2020-02-06T14:00:00",
+    "EndTime": "2020-02-07T14:00:00",
     "Participants": [
       {
         "Name": "Jeff Gorton",

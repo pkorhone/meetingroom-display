@@ -8,7 +8,9 @@
 }
 
 .nextMeeting {
-  text-align: left; 
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
   flex-grow: 0;
   padding: 30px;
   min-width: 25%;

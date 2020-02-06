@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import './App.css'
 import DetailsPane from './components/DetailsPane'
 import MainPane from './components/MainPane'
 import meetings from './data/meetings.json'
+import './App.css'
 
 function App() {
 

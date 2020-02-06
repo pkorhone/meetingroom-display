@@ -1,6 +1,6 @@
 import React from 'react'
-import './CurrentMeeting.css'
 import CurrentProgress from './CurrentProgress'
+import './CurrentMeeting.css'
 
 const CurrentMeeting = ({ currentMeeting }) => {
 

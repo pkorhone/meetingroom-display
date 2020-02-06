@@ -2,6 +2,7 @@ import React from 'react'
 import { Calendar, momentLocalizer } from 'react-big-calendar'
 import moment from 'moment'
 import 'moment/locale/fi'
+import 'moment/locale/en-gb'
 import 'react-big-calendar/lib/css/react-big-calendar.css'
 import './CalendarView.css'
 
@@ -23,7 +24,7 @@ const CalendarView = ({ onSelectMeeting, meetings }) => {
     <div className='calendarContainer'>
       <div className='roomTitle'>
         <h3>CONFERENCE ROOM</h3>
-        <h2>{moment().format('dddd LL').toUpperCase()}</h2>
+        <h2>{moment().locale('en-gb').format('dddd,  LL').toUpperCase()}</h2>
       </div>
       <div>
         <Calendar
