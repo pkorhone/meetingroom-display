@@ -1,95 +1,130 @@
 [
   {
-    "Subject": "eCraft Management Monthly Meeting",
-    "Organizer": "Ville Hemmil�",
+    "Subject": "Weekly Meeting",
+    "Organizer": "Gary Bettman",
     "StartTime": "2020-02-06T07:30:00",
-    "EndTime": "2020-02-06T08:30:00",
+    "EndTime": "2020-02-06T09:30:00",
     "Participants": [
       {
-        "Name": "Juho R�yhy",
+        "Name": "Ken Holland",
         "Title": "Art Director"
       },
       {
-        "Name": "Petteri Lehtonen",
+        "Name": "Jim Rutherford",
         "Title": "UX Architect"
       },
       {
-        "Name": "Tero Tapanainen",
+        "Name": "Doug Armstrong",
         "Title": "CTO"
       }
     ]
   },
   {
-    "Subject": "Jooses Design workshop",
-    "Organizer": "Joose Rautemaa",
+    "Subject": "Design workshop",
+    "Organizer": "Don Waddell",
     "StartTime": "2020-02-06T09:30:00",
     "EndTime": "2020-02-06T10:30:00",
     "Participants": null,
-    "Description": "This is a test event for the meeting room calendar display."
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
-    "Subject": "Joose goes sickbr0",
-    "Organizer": "Joose Rautemaa",
-    "StartTime": "2020-02-06T10:30:00",
-    "EndTime": "2020-02-06T11:30:00",
+    "Subject": "Training event",
+    "Organizer": "Don Sweeney",
+    "StartTime": "2020-02-06T11:00:00",
+    "EndTime": "2020-02-06T14:00:00",
     "Participants": [
       {
-        "Name": "Petteri Lehtonen",
-        "Title": "UX Architect"
+        "Name": "Jeff Gorton",
+        "Title": "Lead Programmer"
       },
       {
-        "Name": "Tero Tapanainen",
-        "Title": "CTO"
+        "Name": "David Poile",
+        "Title": "Designer"
       }
     ],
-    "Description": "This is a test event that has some participants and a description."
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
   },
   {
-    "Subject": "Nousiainen Inspection",
-    "Organizer": "Joose Rautemaa",
-    "StartTime": "2020-02-06T19:15:00",
-    "EndTime": "2020-02-06T21:15:00",
+    "Subject": "Customer meeting",
+    "Organizer": "Marc Bergevin",
+    "StartTime": "2020-02-06T15:00:00",
+    "EndTime": "2020-02-06T16:30:00",
     "Participants": null
   },
   {
-    "Subject": "Future Fourth",
-    "Organizer": "Joose Rautemaa",
-    "StartTime": "2020-02-07T11:30:00",
-    "EndTime": "2020-02-07T13:30:00",
-    "Participants": null
-  },
-  {
-    "Subject": "Future First",
-    "Organizer": "Ville Hemmil�",
-    "StartTime": "2020-02-07T07:30:00",
-    "EndTime": "2020-02-07T08:30:00",
+    "Subject": "Important Afternoon Meeting",
+    "Organizer": "Jarmo Kekäläinen",
+    "StartTime": "2020-02-06T17:00:00",
+    "EndTime": "2020-02-06T18:00:00",
     "Participants": [
       {
-        "Name": "Juho R�yhy",
-        "Title": "Art Director"
+        "Name": "Bob Murray",
+        "Title": "QA Lead"
       },
       {
-        "Name": "Petteri Lehtonen",
-        "Title": "UX Architect"
+        "Name": "Dale Tallon",
+        "Title": "Software Engineer"
       },
       {
-        "Name": "Tero Tapanainen",
-        "Title": "CTO"
+        "Name": "Doug Wilson",
+        "Title": "Software Engineer"
+      }
+    ],
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "Subject": "Early Morning Meeting",
+    "Organizer": "Kyle Dubas",
+    "StartTime": "2020-02-07T06:00:00",
+    "EndTime": "2020-02-07T08:00:00",
+    "Participants": null
+  },
+  {
+    "Subject": "Sales review",
+    "Organizer": "Brad Treliving",
+    "StartTime": "2020-02-07T8:00:00",
+    "EndTime": "2020-02-07T9:30:00",
+    "Participants": null
+  },
+  {
+    "Subject": "Customer meeting",
+    "Organizer": "Marc Bergevin",
+    "StartTime": "2020-02-07T10:00:00",
+    "EndTime": "2020-02-07T11:00:00",
+    "Participants": null,
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "Subject": "Design workshop",
+    "Organizer": "Don Waddell",
+    "StartTime": "2020-02-07T12:00:00",
+    "EndTime": "2020-02-06T14:00:00",
+    "Participants": [
+      {
+        "Name": "Jeff Gorton",
+        "Title": "Lead Programmer"
+      },
+      {
+        "Name": "David Poile",
+        "Title": "Designer"
+      }
+    ],
+    "Description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  {
+    "Subject": "Training event",
+    "Organizer": "Don Sweeney",
+    "StartTime": "2020-02-07T15:00:00",
+    "EndTime": "2020-02-07T18:00:00",
+    "Participants": [
+      {
+        "Name": "Jeff Gorton",
+        "Title": "Lead Programmer"
+      },
+      {
+        "Name": "David Poile",
+        "Title": "Designer"
       }
     ]
-  },
-  {
-    "Subject": "Future Third",
-    "Organizer": "Joose Rautemaa",
-    "StartTime": "2020-02-07T10:30:00",
-    "EndTime": "2020-02-07T11:30:00",
-    "Participants": null
-  },
-  {
-    "Subject": "Future Second",
-    "Organizer": "Joose Rautemaa",
-    "StartTime": "2020-02-07T09:30:00",
-    "EndTime": "2020-02-07T10:30:00",
-    "Participants": null
   }
 ]
