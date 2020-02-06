@@ -33,18 +33,18 @@ const Detail = (props) => {
 
 
   return (
-    <div>
+    <div onClick={() => toggleCollapsed()}>
 
       <div className='detailTitleBar'>
         <div className='detailIcon'>
           <img src={props.icon} alt=''/>
         </div>
-        <div className='detailTitle' onClick={() => toggleCollapsed()}>
+        <div className='detailTitle'>
           <p>{props.title}</p>
         </div>
         {props.type === 'collapse' ? 
           // show collapse icon for collapsible content
-          <div className='detailCollapse' onClick={() => toggleCollapsed()}>
+          <div className='detailCollapse'>
             {collapsed ? <Icon name='chevron down' size='big'/> : <Icon name='chevron up' size='big'/>}
           </div> :
           null
