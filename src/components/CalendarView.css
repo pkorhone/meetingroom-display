@@ -61,6 +61,13 @@
   z-index: 0;
 }
 
+.rbc-timeslot-group {
+  /*
+  * time slot height
+  */
+  min-height: 60px;
+}
+
 .rbc-time-gutter .rbc-timeslot-group {
   /*
   * time label cells
