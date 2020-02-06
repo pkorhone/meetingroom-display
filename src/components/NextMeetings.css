@@ -1,0 +1,25 @@
+.nextMeetings {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px 0 20px 0;
+  background-color: rgba(66, 90, 112, 0.2);
+}
+
+.nextMeeting {
+  text-align: left; 
+  flex-grow: 0;
+  padding: 40px;
+}
+
+.nextMeeting h3 {
+  font-weight: 300;
+  margin: none;
+}
+
+.nextMeeting h2 {
+  font-weight: 900;
+  font-size: large;
+  margin: -5px 0 -15px 0;
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import './NextMeetings.css'
 
 const NextMeetings = ({ nextMeetings }) => {
 
@@ -6,33 +7,20 @@ const NextMeetings = ({ nextMeetings }) => {
 
   return (
     <div>
-      <div>
-        <div style={{
-          display:"flex",
-          flexDirection:"row",
-          flexWrap:"wrap"
-        }}>
-          {nextMeetings.length === 0 ? 
-            null :
-            nextMeetings.map(meeting => 
-              <div
-                style={{
-                  textAlign:"left", 
-                  flexBasis:180,
-                  flexGrow:1,
-                  padding:10,
-                  border:"2px solid"
-                }}
-                
-                key={meeting.StartTime + meeting.Subject}
-              >
-                <p>{meeting.StartTime.substring(11,16)} - {meeting.EndTime.substring(11,16)}</p>
-                <p><b>{meeting.Subject}</b></p>
-                <p>{meeting.Organizer.toUpperCase()}</p>
-              </div>
-            )
-          }
-        </div>
+      <div className='nextMeetings'>
+        <div className='nextMeetingsBackground'></div>
+        {nextMeetings.length === 0 ? 
+          null :
+          nextMeetings.map(meeting => 
+            <div className='nextMeeting'
+              key={meeting.StartTime + meeting.Subject}
+            >
+              <h3>{meeting.StartTime.substring(11,16)} - {meeting.EndTime.substring(11,16)}</h3>
+              <h2>{meeting.Subject}</h2>
+              <h3>{meeting.Organizer.toUpperCase()}</h3>
+            </div>
+          )
+        }
       </div>
     </div>
   )
