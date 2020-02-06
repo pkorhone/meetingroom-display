@@ -1,6 +1,23 @@
 .calendarContainer {
   max-height: 100vh;
+  padding: 20px;
 }
+
+.roomTitle {
+  margin-bottom: 20px;
+}
+
+.roomTitle h3 {
+  font-weight: 300;
+  font-size: medium;
+  margin: 0;
+}
+
+.roomTitle h2 {
+  font-weight: 900;
+  margin: 0;
+}
+
 
 /*
 * override react-big-calendar default styles
@@ -20,20 +37,35 @@
   display: none;
 }
 
+.rbc-time-view {
+  /*
+  * day view
+  */
+  border: none;
+}
+
+.rbc-time-content {
+  /*
+  * day view borders
+  */
+  border: none;
+}
+
 
 .rbc-time-content > * + * > * {
   /*
   * time grid content
   */
-  border-top: 0px;
-  border-left: 0px;
+  border-top: none;
+  border-left: none;
+  z-index: 0;
 }
 
 .rbc-time-gutter .rbc-timeslot-group {
   /*
   * time label cells
   */
-  border: 0;
+  border: none;
   margin: -11px 5px 11px 0;   /* offset to show labels at exact hour */
 }
 

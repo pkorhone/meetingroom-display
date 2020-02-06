@@ -12,9 +12,9 @@ const CalendarView = ({ onSelectMeeting, meetings }) => {
 
   return (
     <div className='calendarContainer'>
-      <div style={{height:'10%'}}>
-        <small>CONFERENCE ROOM</small>
-        <h1>DATE</h1>
+      <div className='roomTitle' style={{height:'10vh'}}>
+        <h3>CONFERENCE ROOM</h3>
+        <h2>{moment().format('Do MMMM YYYY').toUpperCase()}</h2>
       </div>
       <div>
         <Calendar
@@ -29,7 +29,7 @@ const CalendarView = ({ onSelectMeeting, meetings }) => {
           step={15}
           timeslots={2}
           onSelectEvent={(meeting) => onSelectMeeting(meeting)}
-          style={{height:'90%'}}
+          style={{height:'85vh'}}
         />
       </div>
     </div>
