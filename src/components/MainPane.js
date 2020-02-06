@@ -4,7 +4,7 @@ import CurrentMeeting from './CurrentMeeting'
 import NextMeetings from './NextMeetings'
 import './MainPane.css'
 
-const MainPane = ({ meetings }) => {
+const MainPane = ({ meetings, onSelectMeeting }) => {
 
   const [currentMeeting, setCurrentMeeting] = useState(null)
   const [nextMeetings, setNextMeetings] = useState([])
@@ -62,7 +62,7 @@ const MainPane = ({ meetings }) => {
   return (
     <div className='mainPane'>
       <CurrentMeeting currentMeeting={currentMeeting}/>
-      <NextMeetings nextMeetings={nextMeetings}/>
+      <NextMeetings nextMeetings={nextMeetings} onSelectMeeting={onSelectMeeting}/>
     </div>
   )
 }

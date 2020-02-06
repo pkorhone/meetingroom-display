@@ -3,18 +3,7 @@ import './DetailsPane.css'
 import CalendarView from './CalendarView'
 import EventDetailsView from './EventDetailsView'
 
-const DetailsPane = ({ meetings }) => {
-
-  const [selectedMeeting, setSelectedMeeting] = useState(null)
-
-  const onSelectMeeting = (meeting) => {
-    console.log(meeting)
-    setSelectedMeeting(meeting)
-  }
-
-  const onReturnToCalendar = () => {
-    setSelectedMeeting(null)
-  }
+const DetailsPane = ({ meetings, selectedMeeting, onSelectMeeting, onReturnToCalendar }) => {
 
   return (
     <div className='detailsPane'>

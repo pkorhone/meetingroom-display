@@ -1,9 +1,7 @@
 import React from 'react'
 import './NextMeetings.css'
 
-const NextMeetings = ({ nextMeetings }) => {
-
-  console.log(nextMeetings)
+const NextMeetings = ({ nextMeetings, onSelectMeeting }) => {
 
   return (
     <div>
@@ -14,6 +12,7 @@ const NextMeetings = ({ nextMeetings }) => {
           nextMeetings.map(meeting => 
             <div className='nextMeeting'
               key={meeting.StartTime + meeting.Subject}
+              onClick={() => onSelectMeeting(meeting)}
             >
               <h3>{meeting.StartTime.substring(11,16)} - {meeting.EndTime.substring(11,16)}</h3>
               <h2>{meeting.Subject}</h2>
