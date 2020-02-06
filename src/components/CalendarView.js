@@ -14,7 +14,7 @@ const CalendarView = ({ onSelectMeeting, meetings }) => {
     <div className='calendarContainer'>
       <div className='roomTitle' style={{height:'10vh'}}>
         <h3>CONFERENCE ROOM</h3>
-        <h2>{moment().format('Do MMMM YYYY').toUpperCase()}</h2>
+        <h2>{moment().format('dddd LL').toUpperCase()}</h2>
       </div>
       <div>
         <Calendar
